@@ -1,18 +1,43 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="flex flex-col min-h-screen">
+  <HeaderComp />
+  <main class="flex-grow">
+  <MainComp /> 
+  <section class="my-16" id="services">
+     <ServicesComp />
+  </section>
+  <section class="my-16 text-center">
+    <ContactComp />
+  </section>
+
+  <router-view />
+</main>
+  <FooterComp />
+</div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script >
+import ContactComp from './components/ContactComp.vue';
+import FooterComp from './components/FooterComp.vue';
+import HeaderComp from './components/HeaderComp.vue';
+import MainComp from './components/MainComp.vue';
+import ServicesComp from './components/ServicesComp.vue';
+
+
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    HeaderComp,
+    MainComp,
+    FooterComp,
+    ServicesComp,
+    ContactComp,
   }
+
 }
+
 </script>
+
 
 <style>
 #app {
@@ -21,6 +46,14 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
+
+nav {
+  padding: 30px;
+  color: whitesmoke;
+}
+
+
+
+
 </style>
