@@ -11,6 +11,7 @@ module.exports = {
       fontFamily: {
         satoshi: ['Satoshi', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
+        otterco: ['"Otterco Display Medium"', 'sans-serif'],
       },
     },
   },
