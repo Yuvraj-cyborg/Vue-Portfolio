@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    background-color: #efeeed;
+}
+
+@font-face {
+    font-family: 'Otterco Display Medium';
+    src: url('./assets/fonts/Otterco-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
