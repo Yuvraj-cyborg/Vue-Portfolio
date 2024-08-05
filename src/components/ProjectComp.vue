@@ -15,9 +15,9 @@
     <div class="container mx-auto font-inter">  
       <div class="flex justify-center">   
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl">   
-          <div v-for="project in projectsWithImages" :key="project.id" class="p-4 text-center border-2 border-gray-300 transition-transform transform hover:scale-105 hover:border-gray-400" @click="goToProject(project.link)">  
+          <div v-for="project in projectsWithImages" :key="project.id" class="p-4 text-start border-2 border-gray-300 transition-transform transform hover:scale-105 hover:border-gray-400" @click="goToProject(project.link)">  
             <img :src="project.imageSrc" alt="Project Image" class="w-full h-auto">  
-            <h3 class="font-semibold mt-2">{{ project.title }}</h3>  
+            <h3 class="font-bold mt-2 text-gradient-to-r from-slate-950 to-gray-500">{{ project.title }}</h3>  
             <p class="text-gray-600 mt-2">{{ project.description }}</p>  
           </div>  
         </div>  

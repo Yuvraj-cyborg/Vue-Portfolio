@@ -8,14 +8,16 @@
     </button>
 </div> <br>
 <br>
-<div class="container mx-auto px-4 sm:px-6 lg:px-8 font-inter">
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-start ml-40">
+<div class="container mx-auto font-inter">
+  <div class="flex justify-center">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center ml-40">
     <div v-for="service in services" :key="service.id" class="p-4 text-left">
       <img :src="require('@/assets/images/' + service.image)" alt="Brand Logo" class="mb-4 h-8">
       <h3 class="font-semibold">{{ service.title }}</h3>
       <p class="text-gray-600 mt-2">{{ service.description }}</p>
     </div>
   </div>
+</div>
 </div>
     </div>
 </template>

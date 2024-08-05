@@ -4,7 +4,7 @@
       <div class="flex items-center font-inter ">
         <div class="flex justify-between backdrop-blur-xl items-center gap-2 bg-slate-200 rounded-full text-xs">
           <div class="bg-slate-200 rounded-full ml-4 text-slate-950" id="email">yuvrajbiswalofficial@gmail.com</div>
-          <button class=" text-gray-600 bg-white h-7 w-20 rounded-full font-inter text-xs" @click="doCopy">copy</button>
+          <button class=" text-gray-600 bg-white h-7 w-20 rounded-full font-inter text-xs" @click="doCopy">{{ buttonText }}</button>
         </div>
       </div>
       <nav class="hidden md:flex">
@@ -35,15 +35,26 @@ export default {
   data() {
     return {
       isMenuOpen: false,
-      message: 'yuvrajbiswalofficial@gmail.com'
+      message: 'yuvrajbiswalofficial@gmail.com',
+      isCopied: false
     };
+  },
+  computed: {
+    buttonText() {
+      return this.isCopied ? 'Copied!' : 'Copy';
+    }
   },
   methods: {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
     },
     doCopy() {
-      this.$copyText(this.message);
+      this.$copyText(this.message).then(() => {
+        this.isCopied = true;
+        setTimeout(() => {
+          this.isCopied = false;
+        }, 2000); 
+      });
     }
   }
 }
