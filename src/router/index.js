@@ -1,5 +1,4 @@
 import MainComp from '@/components/MainComp.vue';
-import ServicesComp from '@/components/ServicesComp.vue';
 import { createRouter, createWebHistory } from 'vue-router'
 
 
@@ -9,12 +8,6 @@ const routes = [
   name: 'main',
   components: MainComp,
 },
-{
-  path: "/services",
-  name: 'services',
-  components: ServicesComp,
-}
-
 ]
 
 const router = createRouter({
