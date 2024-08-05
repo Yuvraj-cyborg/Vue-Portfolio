@@ -29,10 +29,6 @@
           <router-link to="/contact" class="text-gray-700">Contact</router-link>
         </nav>
       </div>
-<<<<<<< HEAD
-      <router-view />
-=======
->>>>>>> f0d6a0ed250cb8833063ed85b366aeb9b944ccc8
     </header>
   </template>
   
