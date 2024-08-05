@@ -6,6 +6,9 @@
   <section class="my-16" id="services">
      <ServicesComp />
   </section>
+  <section class="my-16" id="projects">
+     <ProjectComp />
+  </section>
   <section class="my-16 text-center">
     <ContactComp />
   </section>
@@ -21,6 +24,7 @@ import ContactComp from './components/ContactComp.vue';
 import FooterComp from './components/FooterComp.vue';
 import HeaderComp from './components/HeaderComp.vue';
 import MainComp from './components/MainComp.vue';
+import ProjectComp from './components/ProjectComp.vue';
 import ServicesComp from './components/ServicesComp.vue';
 
 
@@ -31,6 +35,7 @@ export default {
     MainComp,
     FooterComp,
     ServicesComp,
+    ProjectComp,
     ContactComp,
   }
 
