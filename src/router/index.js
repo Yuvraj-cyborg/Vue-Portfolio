@@ -1,27 +1,25 @@
+import { createRouter, createWebHistory } from 'vue-router';
 import MainComp from '@/components/MainComp.vue';
-import { createRouter, createWebHistory } from 'vue-router'
-
 
 const routes = [
-{
-  path: '/main',
-  name: 'main',
-  components: MainComp,
-},
-]
+  {
+    path: '/',
+    component: MainComp,
+  }
+];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL || '/'),
+  history: createWebHistory(process.env.BASE_URL),
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
       return {
         selector: to.hash,
-        behavior: 'smooth',
+        behavior: 'smooth'
       };
     }
     return savedPosition || { x: 0, y: 0 };
-  },
-})
+  }
+});
 
-export default router
+export default router;

@@ -1,33 +1,29 @@
 <template>
   <div class="flex flex-col min-h-screen">
-  <HeaderComp />
-  <main class="flex-grow">
-  <MainComp /> 
-  <section class="my-16" id="services">
-     <ServicesComp />
-  </section>
-  <section class="my-16" id="projects">
-     <ProjectComp />
-  </section>
-  <section class="my-16 text-center">
-    <ContactComp />
-  </section>
-
-  <router-view />
-</main>
-  <FooterComp />
-</div>
+    <HeaderComp />
+    <main class="flex-grow">
+      <MainComp /> 
+      <section class="my-16" id="services">
+        <ServicesComp />
+      </section>
+      <section class="my-16" id="projects">
+        <ProjectComp />
+      </section>
+      <section class="my-16 text-center" id="contact">
+        <ContactComp />
+      </section>
+    </main>
+    <FooterComp />
+  </div>
 </template>
 
-<script >
-import ContactComp from './components/ContactComp.vue';
-import FooterComp from './components/FooterComp.vue';
+<script>
 import HeaderComp from './components/HeaderComp.vue';
+import FooterComp from './components/FooterComp.vue';
 import MainComp from './components/MainComp.vue';
-import ProjectComp from './components/ProjectComp.vue';
 import ServicesComp from './components/ServicesComp.vue';
-
-
+import ProjectComp from './components/ProjectComp.vue';
+import ContactComp from './components/ContactComp.vue';
 
 export default {
   components: {
@@ -36,13 +32,10 @@ export default {
     FooterComp,
     ServicesComp,
     ProjectComp,
-    ContactComp,
+    ContactComp
   }
-
 }
-
 </script>
-
 
 <style>
 #app {
@@ -57,8 +50,4 @@ nav {
   padding: 30px;
   color: whitesmoke;
 }
-
-
-
-
 </style>
