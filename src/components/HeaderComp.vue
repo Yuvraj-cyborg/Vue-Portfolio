@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
     <header class="bg-gray-200">
       <div class="w-full flex justify-between items-center p-4">
