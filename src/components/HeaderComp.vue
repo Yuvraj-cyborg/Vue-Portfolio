@@ -1,6 +1,6 @@
 <template>
   <header class="bg-gray-200">
-    <div class="w-full flex justify-between items-center p-4">
+    <div class="w-full flex justify-between items-center px-4 py-0">
       <div class="flex items-center font-inter ">
         <div class="flex justify-between backdrop-blur-xl items-center gap-2 bg-slate-200 rounded-full text-xs">
           <div class="bg-slate-200 rounded-full ml-4 text-slate-950" id="email">yuvrajbiswalofficial@gmail.com</div>

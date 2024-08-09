@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p class="text-4xl font-bold mt-4 font-inter text-transparent bg-clip-text bg-gradient-to-r from-slate-950 to-gray-500">Collaborate with me to create impactful results.</p> <br>
+        <p class="text-4xl font-bold mt-4 font-inter text-transparent bg-clip-text bg-gradient-to-r from-slate-950 to-gray-500">Domains of which services are provided by me.</p> <br>
     <div class="relative flex items-center mt-12">
     <div class="w-full bg-gray-200 h-0.5 "></div>
     <button class="absolute left-1/2 transform -translate-x-1/2 py-2 bg-white text-center font-semibold rounded-full w-24 font-inter">
